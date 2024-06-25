@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'vaguely-retro-regular';
+    src: url(./font/VaguelyRetroRegular-3zAqM.ttf);
+}
+
+@font-face {
+    font-family: 'louis-george-cafe';
+    src: url(./font/louis_george_cafe/Louis-George-Cafe.ttf);
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: vaguely-retro-regular;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    font-family: vaguely-retro-regular;
+}
+
+h3 {
+    text-align: center;
+    font-size: 20px;
+    font-family: vaguely-retro-regular;
+}
+
+p {
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 20px;
+    font-family: louis-george-cafe;
+}
+
+body {
+    background-color: #fcd4ea;
+}
+
+button {
+    background-color: #f788c5;
+    cursor: pointer;
+    margin-left: 45%;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+img {
+    max-width: 400px;
+    max-height: 400px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+
+}
+
+ul.links {
+    list-style-type: none;
+    margin: -7;
+    padding: -7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li.links {
+    display: inline;
+    margin: 15px;
+    float: left;
+}
+
+.cat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head {
+    background-color: white;
+    margin-top: -20px;
+    margin-left: -7px;
+    margin-right: -7px;
+    box-shadow: 0px 2px 30px;
+
+}
+
+.list {
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 20px;
+    font-family: louis-george-cafe;
+}
