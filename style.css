@@ -35,6 +35,8 @@ p {
 
 body {
     background-color: #fcd4ea;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 button {
@@ -62,10 +64,21 @@ img {
 
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.spotify {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
 ul.links {
     list-style-type: none;
-    margin: -7;
-    padding: -7;
+
     display: flex;
     justify-content: center;
     align-items: center;
