@@ -8,41 +8,45 @@
     src: url(./font/louis_george_cafe/Louis-George-Cafe.ttf);
 }
 
-h1 {
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'louis-george-cafe', sans-serif;
+    background-color: #fcd4ea;
+}
+
+/* Centering and padding adjustments */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
     text-align: center;
+    font-family: 'vaguely-retro-regular';
+}
+
+h1 {
     font-size: 50px;
-    font-family: vaguely-retro-regular;
 }
 
 h2 {
-    text-align: center;
     font-size: 30px;
-    font-family: vaguely-retro-regular;
 }
 
 h3 {
-    text-align: center;
     font-size: 20px;
-    font-family: vaguely-retro-regular;
 }
 
 p {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: 20px;
     font-size: 20px;
-    font-family: louis-george-cafe;
-}
-
-body {
-    background-color: #fcd4ea;
-    margin-left: 20%;
-    margin-right: 20%;
 }
 
 button {
     background-color: #f788c5;
     cursor: pointer;
-    margin-left: 45%;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -54,14 +58,8 @@ button {
 }
 
 img {
-    max-width: 400px;
-    max-height: 400px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    white-space: nowrap;
-
+    max-width: 100%;
+    margin: 10px;
 }
 
 a {
@@ -72,42 +70,104 @@ a {
 .spotify {
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
     gap: 15px;
 }
 
 ul.links {
     list-style-type: none;
-
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0;
 }
 
 li.links {
     display: inline;
     margin: 15px;
-    float: left;
 }
 
 .cat {
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
 .head {
     background-color: white;
-    margin-top: -20px;
-    margin-left: -7px;
-    margin-right: -7px;
+    padding: 20px;
     box-shadow: 0px 2px 30px;
-
 }
 
 .list {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: 20px;
     font-size: 20px;
-    font-family: louis-george-cafe;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        margin: 10px;
+        font-size: 18px;
+    }
+
+    button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    ul.links {
+        flex-direction: column;
+    }
+
+    li.links {
+        margin: 10px 0;
+    }
+
+    .spotify {
+        flex-direction: column;
+    }
+
+    .cat {
+        flex-direction: column;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    p {
+        margin: 5px;
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 14px;
+    }
 }
